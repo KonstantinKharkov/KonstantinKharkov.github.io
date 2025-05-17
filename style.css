@@ -773,7 +773,7 @@ a {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
-  font-size: var(--smallest-fz);
+  font-size: var(--small-fz);
   color: var(--text-color-1);
   background-color: var(--bg-color-1);
   box-shadow: var(--box-shadow);
