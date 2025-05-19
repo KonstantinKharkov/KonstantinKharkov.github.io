@@ -39,15 +39,16 @@
 
     --big-fz: calc(20px + (50 - 20) * ((100vw - 300px) / (1500 - 300)));
     --medium-fz: calc(16px + (35 - 16) * ((100vw - 300px) / (1500 - 300)));
-    /* --small-fz: calc(12px + (18 - 12) * ((100vw - 300px) / (1500 - 300))); */
-    --small-fz: calc(14px + (20 - 14) * ((100vw - 300px) / (1500 - 300)));
-    /* --smallest-fz: calc(8px + (14 - 8) * ((100vw - 300px) / (1500 - 300))); */
-    --smallest-fz: calc(10px + (15 - 10) * ((100vw - 300px) / (1500 - 300)));
+    --small-fz: calc(12px + (18 - 12) * ((100vw - 300px) / (1500 - 300)));
+    /* --small-fz: calc(14px + (20 - 14) * ((100vw - 300px) / (1500 - 300))); */
+    --smallest-fz: calc(8px + (14 - 8) * ((100vw - 300px) / (1500 - 300)));
+    /* --smallest-fz: calc(10px + (15 - 10) * ((100vw - 300px) / (1500 - 300))); */
 
 }
 
 body {
     background: var(--bg-color-1);
+    
     
 }
 
@@ -605,7 +606,7 @@ a {
   }
   
   .contacts .social-icons a {
-    font-size: 2.4rem;
+    font-size: var(--small-fz);
     color: var(--main-color);
     transition: 0.3s;
   }
@@ -779,7 +780,7 @@ a {
   color: var(--text-color-1);
   background-color: var(--bg-color-1);
   box-shadow: var(--box-shadow);
-  margin: 2rem auto; /* Центрирование по горизонтали */
+  margin: 2rem auto; 
 }
 
 .price-table th,
@@ -787,14 +788,14 @@ a {
   border: 1px solid var(--main-color);
   padding: 1rem;
   text-align: center;
-  word-break: break-word; /* Перенос длинных слов */
+  word-break: break-word; 
 }
 
 @media (max-width: 600px) {
   .price-table th,
   .price-table td {
     padding: 0.5rem;
-    font-size: 0.75rem;
+    font-size: var(--smallest-fz);
   }
 }
 
